@@ -1,0 +1,19 @@
+#introduce {
+	background: no-repeat center center;
+	background-size: cover;
+	height: 90vh;
+	position: relative;
+	z-index: 1;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.align-column {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 10%;
+}

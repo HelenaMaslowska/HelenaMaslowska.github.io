@@ -1,0 +1,37 @@
+/* 
+#c081ff - violet
+#86ffe9 - aqua
+#84ffad - green
+*/
+
+:root {
+	--bg-color: #423E37;
+	--main-color: #423E37;
+	--secondary-color: #E3B23C;
+	--tertiary-color: #EDEBD7;
+}
+
+* {
+	font-family: 'Proxima Nova', sans-serif;
+	background: var(--bg-color);
+	transition: 0.3s;
+}
+
+*::selection {
+	background-color: var(--tertiary-color);
+	color: white;
+}
+
+html {
+	/*scroll-behavior: smooth;*/
+	background-image: url("flowers.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+body {
+	padding: 0px 18% 0px 18%;
+	margin: 0; /* If you delete it, max hv will not be 100hv */
+}
+

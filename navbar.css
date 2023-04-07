@@ -1,0 +1,41 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh
+}
+
+#branding {
+	font-family: 'Open Sans', sans-serif !important;
+	font-size: small;
+}
+
+.highlight {
+	color: var(--secondary-color);
+}
+
+.highlight:hover {
+	color: #67ff9a;
+}
+
+.navbar {
+	display: flex;
+	padding: 8px 8px;
+}
+
+[href] {
+	color: var(--tertiary-color);
+	text-decoration-line: none;
+}
+nav > [href]:hover {
+	color: var(--secondary-color);
+}
+
+nav > a {
+	display: inline;
+	min-width: 75px;
+}
+
+h1 {
+	color: beige;
+}
