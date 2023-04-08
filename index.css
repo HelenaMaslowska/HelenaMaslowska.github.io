@@ -13,12 +13,11 @@
 
 * {
 	font-family: 'Proxima Nova', sans-serif;
-	background: var(--bg-color);
 	transition: 0.3s;
 }
 
 *::selection {
-	background-color: var(--tertiary-color);
+	background-color: var(--secondary-color);
 	color: white;
 }
 
@@ -31,7 +30,9 @@ html {
 }
 
 body {
-	padding: 0px 18% 0px 18%;
+	
 	margin: 0; /* If you delete it, max hv will not be 100hv */
+	/*margin: 0px 18% 0px 18%;*/
 }
+
 

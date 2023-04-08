@@ -1,12 +1,19 @@
+:root {
+	--bg-color: #423E37;
+	--main-color: #423E37;
+	--secondary-color: #E3B23C;
+	--tertiary-color: #EDEBD7;
+}
+
 #introduce {
 	background: no-repeat center center;
-	background-size: cover;
+	background-color: var(--main-color);
 	height: 90vh;
-	position: relative;
 	z-index: 1;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	margin: 0;
 	justify-content: space-around;
 }
 
@@ -15,5 +22,4 @@
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	padding-top: 10%;
 }
