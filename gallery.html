@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Helena's Gallery</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='navbar.css'>
+	<script src='index.js'></script>
+
+	<script
+		type="text/javascript"
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" >
+	</script>
+	<script>
+		var folder = "Paintings/";
+
+		$.ajax({
+			url : folder,
+			success: function (data) {
+				$(data).find("a").attr("href", function (i, val) {
+					if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+						$("body").append( "<img src='"+ folder + val +"'>" );
+					} 
+				});
+			}
+		});
+		</script> 
+</head>
+	<body>
+		<header class="container">
+			<div id="branding">
+				<h1><a href="index.html"><span class="highlight">Helena</span> Masłowska</h1></a>
+			</div>
+			<nav class="navbar">
+				<a href="index.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="projects.html">Projects</a>
+				<a href="gallery.html">Gallery</a>
+			</nav>
+		</header>
+		<div>
+			
+		</div>
+	</body>
+</html>

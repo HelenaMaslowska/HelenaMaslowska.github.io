@@ -33,28 +33,19 @@
 
 .navbar {
 	display: flex;
-	padding-left: 30px;
+	justify-content: space-around;
+	width: 400px;
 }
 
 [href] {
 	color: var(--tertiary-color);
 	text-decoration-line: none;
-	
 }
+
 nav > [href]:hover {
 	color: var(--secondary-color);
 	text-decoration: overline underline 1px;
 	text-underline-offset: 5px;
-}
-
-nav > a {
-	display: inline;
-	min-width: 75px;
-}
-
-a {
-	display: inline;
-	min-width: 75px;
 }
 
 h1 {
