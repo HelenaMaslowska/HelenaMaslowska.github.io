@@ -18,6 +18,12 @@
 	text-shadow: 0 0 2px #000000;
 }
 
+@media all and (max-width: 900px) {
+	.container {
+		flex-direction: column;
+	}
+}
+
 #branding {
 	font-family: 'Open Sans', sans-serif !important;
 	font-size: small;
