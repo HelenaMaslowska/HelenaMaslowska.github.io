@@ -13,18 +13,38 @@
 		type="text/javascript"
 		src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" >
 	</script>
-	<script>
-		var folder = "Paintings/";
+	<script type="text/javascript">
+		function edit ()
+		{
+			var row = $(this); 		
+			$('#a=jakies').html('<input id="edit" value="' + row.text() + '">');
+			row.html('<input id="edit" value="' + row.text() + '">');		
+			$('#edit').blur(function () 
+			{
+				row.text($(this).val());
+				row.one('click', edit);
+			}).focus();
+		}
+		$(function ()
+		{
+			$('button').one('click', edit); //działa na elementy td
+		});
+		// $.ajax({
+		// 	url : folder,
+		// 	success: (data) => {
+		// 		$(data).find("a").attr("href", function (i, val) {
+		// 			if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+		// 				$("body").append( "<img src='"+ folder + val +"'>" );
+		// 			} 
+		// 		});
+		// 	}
+		// }); 
+		$(function ()
+		{
+			$('td').one('click', edit);
+			$('button').bind('asdf', function () { alert('Asdf!'); });
+			//$('*').unbind();
 
-		$.ajax({
-			url : folder,
-			success: function (data) {
-				$(data).find("a").attr("href", function (i, val) {
-					if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-						$("body").append( "<img src='"+ folder + val +"'>" );
-					} 
-				});
-			}
 		});
 		</script> 
 </head>
@@ -41,7 +61,8 @@
 			</nav>
 		</header>
 		<div>
-			
+			<div id="jakies">Lista</div>
+			<button> Klik </button>
 		</div>
 	</body>
 </html>

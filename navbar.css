@@ -52,7 +52,7 @@
 	text-decoration-line: none;
 }
 
-nav > [href]:hover {
+a[href*=contact]:hover, nav > [href]:hover {
 	color: var(--secondary-color);
 	text-decoration: overline underline 1px;
 	text-underline-offset: 5px;
