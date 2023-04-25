@@ -24,10 +24,10 @@
 		line-height: 1.0;
 		padding: 20px;
 		justify-content: center;
-		height: 10vh;
+		height: 8vh;
 	}
 	#branding {
-		line-height: 1.5;
+		line-height: 0.5;
 	}
 	.navbar {
 		width: 100% !important;
