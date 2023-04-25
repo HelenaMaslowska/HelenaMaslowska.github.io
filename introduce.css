@@ -26,11 +26,11 @@
 }
 
 .align-row > div > img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 500px;
-    border-radius: 500px;
-    -webkit-border-radius: 500px;
-    -moz-border-radius: 500px;
+	width: 400px;
+    height: 400px;
+    margin: 1.5rem;
+    border-radius: 50%;
+    float: right;
+    background-color: black;
+    display: flex;
 }
