@@ -21,8 +21,14 @@
 @media all and (max-width: 900px) {
 	.container {
 		flex-direction: column;
+		line-height: 1.0;
+		padding: 20px;
+		justify-content: center;
+		height: 10vh;
 	}
-
+	#branding {
+		line-height: 1.5;
+	}
 	.navbar {
 		width: 100% !important;
 	}

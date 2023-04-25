@@ -7,47 +7,9 @@
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' type='text/css' media='screen' href='index.css'>
 	<link rel='stylesheet' type='text/css' media='screen' href='navbar.css'>
+	<link rel='stylesheet' type='text/css' media='screen' href='gallery.css'>
 
 	<script src='index.js'></script>
-
-	<script
-		type="text/javascript"
-		src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" >
-	</script>
-	<script type="text/javascript">
-		function edit ()
-		{
-			var row = $(this); 		
-			$('#a=jakies').html('<input id="edit" value="' + row.text() + '">');
-			row.html('<input id="edit" value="' + row.text() + '">');		
-			$('#edit').blur(function () 
-			{
-				row.text($(this).val());
-				row.one('click', edit);
-			}).focus();
-		}
-		$(function ()
-		{
-			$('button').one('click', edit); //działa na elementy td
-		});
-		// $.ajax({
-		// 	url : folder,
-		// 	success: (data) => {
-		// 		$(data).find("a").attr("href", function (i, val) {
-		// 			if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-		// 				$("body").append( "<img src='"+ folder + val +"'>" );
-		// 			} 
-		// 		});
-		// 	}
-		// }); 
-		$(function ()
-		{
-			$('td').one('click', edit);
-			$('button').bind('asdf', function () { alert('Asdf!'); });
-			//$('*').unbind();
-
-		});
-		</script> 
 </head>
 	<body>
 		<header class="container">
@@ -60,9 +22,10 @@
 				<a href="gallery.html">Gallery</a>
 			</nav>
 		</header>
-		<div>
+		<div class="gallery">
 			<div id="jakies">Lista</div>
-			<?php include 'show_images.php';?>
+			<img src="images/2015 Lawendowe pole.jpg" alt="project1">
+
 			<button> Klik </button>
 
 		</div>
