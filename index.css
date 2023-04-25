@@ -61,12 +61,12 @@ hr {
 }
 .diamond {
 	content: "";
+	color: var(--tertiary-color) ; 
 	width: 100px;
 	height: 100px;
-	background: var(--main-color);
+	background: var(--tertiary-color);
 	display: inline-block;
-	border: 2px solid var(--main-color);
-	position: absolute;
+	position: relative;
 	top: -5px;
 	left: 50%;
 	margin: 0 0 0 -3px;

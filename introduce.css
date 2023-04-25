@@ -17,9 +17,20 @@
 	justify-content: space-around;
 }
 
-.align-column {
+.align-row {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	align-self: center;
+}
+
+.align-row > div > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40vh;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
 }
